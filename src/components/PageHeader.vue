@@ -79,7 +79,7 @@ export default {
         width: 1335px;
         height: 73px;
         position: relative;
-            margin-top: 15px;
+            // margin-top: 15px;
         .nav-con{
             height: 50px;
             display: flex;

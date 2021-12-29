@@ -351,7 +351,7 @@ export default {
                 display: flex;
                 position:absolute;
                 left: 50%;
-                bottom: 0;
+                bottom: 15px;
                 transform: translate(-50%,-50%);
             }
         }
