@@ -85,15 +85,17 @@ export default {
     align-items: center;
     position: relative;
     .bg-left{
-      width: 325px;
-      z-index: 1;
+width: 320px;
+    z-index: 1;
+    margin-left: 30px;
     }
     .mid{
       width: 1270px;
     }
     .bg-right{
-      width: 325px;
-      z-index: 1;
+width: 320px;
+    z-index: 1;
+    margin-right: 30px;
     }
     .breathing{
       animation: opacity-change 3s ease-in-out infinite;
@@ -123,7 +125,7 @@ export default {
     height: 100vh;
     overflow-y: hidden;
     background: url(../assets/home/bg.png) no-repeat;
-    background-size: 1920px 100%;
+    background-size: 1900px 97%;
     background-attachment:fixed;
     background-position:center;
     position: relative;

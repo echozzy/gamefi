@@ -27,7 +27,8 @@
         <section class="section">
             <div class="section-item video-con flex-fc flex-ac">
                 <div class="title">
-                <p>READY TO FIGHT</p>
+                    <img class="toptext" src="../assets/home/video-toptext.png" alt="">
+                <!-- <p>READY TO FIGHT</p> -->
                 </div>
                 <div class="item-video" @click="play_video">
                 <div class="video-bg" v-show="isplay">
@@ -164,7 +165,7 @@
                 <img src="../assets/home/shiba-right-img.png" alt="">
             </div>
             <div class="left-icon1">
-                <img src="../assets/home/shiba-left-icon1.png" alt="">
+                <img src="../assets/home/shiba-left-icon1.svg" alt="">
             </div>
             <div class="left-icon2">
                 <img src="../assets/home/shiba-left-icon2.png" alt="">
@@ -309,15 +310,21 @@ export default {
 }
 </script>
 <style lang="less">
+@font-face{
+    font-family: NovaBattle;
+    src: url('../assets/font/novabattlePro.ttf');
+}
 .pc-index{
     .section-item{
-        width: 1270px;
+        width: 1260px;
         justify-content: center;
     }
     .banner-con{
-        position: relative;
-        width: 100%;
-        height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 16px 10px;
+    box-sizing: border-box;
         .banner-img{
             width: 100%;
             height: 100%;
@@ -353,11 +360,18 @@ export default {
         .title{
             position: relative;
             top:47px;
+            .toptext{
+    width: 1000px;
+    height: 110px;
+            }
             p{
                 color: rgba(216, 216, 216, 0);
                 font-size: 125px;
                 -webkit-text-stroke: 2px rgba(102, 154, 196, 1);
                 text-align: center;
+                font-family: NovaBattle;
+                opacity: 0.5;
+                letter-spacing: 9px;
             }
         }
         .item-video{
@@ -428,30 +442,36 @@ export default {
             justify-content: center;
             align-items: center;
             .title-bg{
-                position: relative;
-                z-index: 1;
-                color: rgba(216, 216, 216, 0);
-                font-size: 100px;
-                -webkit-text-stroke: 2px rgba(113, 153, 192, 0.25);
+position: relative;
+    z-index: 1;
+    color: rgba(216, 216, 216, 0);
+    font-size: 120px;
+    font-family: NovaBattle;
+    letter-spacing: 2px;
+    opacity: 0.75;
+    -webkit-text-stroke: 2px rgba(113, 153, 192, 0.25);
             }
             .title-top{
-                position: absolute;
-                font-size: 40px;
-                font-weight: 800;
-                color: #7199C0;
-                letter-spacing: 10px;
+font-family: NovaBattle;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 800;
+    color: #8ec4f9;
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 40px #8ec4f9;
             }
         }
         .item-play{
             width: 1029px;
             position: relative;
             .game-play-btn{
-                position: absolute;
-                bottom: 0px;
-                right: 172px;
-                transform: translateY(15%);
-                z-index: 1;
-                display: flex;
+    position: absolute;
+    bottom: 25px;
+    width: 215px;
+    right: 172px;
+    transform: translateY(15%);
+    z-index: 1;
+    display: flex;
             }
         }
     }
@@ -466,15 +486,20 @@ export default {
                 position: relative;
                 z-index: 1;
                 color: rgba(216, 216, 216, 0);
-                font-size: 100px;
+                font-size: 120px;
+                font-family: NovaBattle;
+letter-spacing: 2px;
+opacity: 0.75;
                 -webkit-text-stroke: 2px rgba(113, 153, 192, 0.25);
             }
             .title-top{
-                position: absolute;
-                font-size: 40px;
-                font-weight: 800;
-                color: #7199C0;
-                letter-spacing: 10px;
+font-family: NovaBattle;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 800;
+    color: #8ec4f9;
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 40px #8ec4f9;
             }
         }
         .item-role-con{
@@ -506,7 +531,7 @@ export default {
         position: relative;
         .shiba-txt-left{
             width: 526px;
-            margin-right: 55px;
+            // margin-right: 55px;
             .txt-title{
                 position: relative;
                 margin-bottom: 46px;
@@ -516,9 +541,13 @@ export default {
                 .title-bottom{
                     position: relative;
                     color: rgba(255, 164, 9, 1);
-                    font-size: 24px;
-                    font-family: PingFangSC-Semibold;
+                    font-size: 28px;
+                    text-shadow: 0px 0px 20px #ffa409;
+                        margin-top: -10px;
+                    // font-family: PingFangSC-Semibold;
+                    font-family: NovaBattle;
                     white-space: nowrap;
+                    letter-spacing: 2.5px;
                     line-height: 33px;
                     text-align: left;
                 }
@@ -526,7 +555,8 @@ export default {
             .txt-content{
                 .content-top{
                     font-size: 18px;
-                    font-family: BlenderPro-Heavy, BlenderPro;
+                    // font-family: BlenderPro-Heavy, BlenderPro;
+                    font-family: NovaBattle;
                     font-weight: 800;
                     color: #FFFFFF;
                     line-height: 25px;
@@ -540,7 +570,9 @@ export default {
                 }
                 .content-bottom{
                     font-size: 18px;
-                    font-family: BlenderPro-Heavy, BlenderPro;
+                    // font-family: BlenderPro-Heavy, BlenderPro;
+                    font-family: NovaBattle;
+                    opacity: 0.5;
                     font-weight: 800;
                     color: #FFFFFF;
                     line-height: 22px;
@@ -558,6 +590,8 @@ export default {
         .left-icon1{
             top: 260px;
             left: 70px;
+                box-sizing: border-box;
+    padding-top: 20px;
         }
         .left-icon2{
             left: 0;
@@ -581,18 +615,23 @@ export default {
             justify-content: center;
             align-items: center;
             .title-bg{
-                position: relative;
-                z-index: 1;
-                color: rgba(216, 216, 216, 0);
-                font-size: 100px;
-                -webkit-text-stroke: 2px rgba(113, 153, 192, 0.25);
+position: relative;
+    z-index: 1;
+    color: rgba(216, 216, 216, 0);
+    font-size: 120px;
+    font-family: NovaBattle;
+    letter-spacing: 2px;
+    opacity: 0.75;
+    -webkit-text-stroke: 2px rgba(113, 153, 192, 0.25);
             }
             .title-top{
-                position: absolute;
-                font-size: 40px;
-                font-weight: 800;
-                color: #7199C0;
-                letter-spacing: 10px;
+font-family: NovaBattle;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 800;
+    color: #8ec4f9;
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 40px #8ec4f9;
             }
         }
         .item-links-con{
@@ -600,6 +639,9 @@ export default {
             .links-item-con{
                 display: flex;
                 justify-content: center;
+                .links-item{
+                    width: 250px;
+                }
                 .links-item-mid{
                     margin: 0 55px;
                 }
@@ -608,26 +650,29 @@ export default {
                 background: url(../assets/home/links-inp-con-bg.png) no-repeat;
                 background-size: 100% 100%;
                 width: 1173px;
-                height: 238px;
+                height: 200px;
                 margin-top: 150px;
                 .inp-title{
                     font-size: 28px;
-                    font-family: BlenderPro-Heavy, BlenderPro;
+                    // font-family: BlenderPro-Heavy, BlenderPro;
+                    font-family: NovaBattle;
                     font-weight: 800;
                     color: #6F99BE;
                     line-height: 34px;
                     display: flex;
                     justify-content: center;
-                    margin-top: 45px;
+    margin-top: 35px;
                 }
                 .inp-con{
-                    margin-top: 45px;
+                    margin-top: 30px;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     .inp{
                         width: 564px;
                         height: 57px;
+                        font-family: NovaBattle;
+                        font-size: 24px;
                     }
                     input{
                         width: 100%;
@@ -653,7 +698,10 @@ export default {
                         margin-left: -2px;
                         background: #6F99BE;
                         font-size: 28px;
-                        font-family: BlenderPro-Heavy, BlenderPro;
+                        // font-family: BlenderPro-Heavy, BlenderPro;
+                        font-family: NovaBattle;
+                        font-size: 24px;
+                        letter-spacing: 2px;
                         font-weight: 800;
                         color: #FFFFFF;
                         display: flex;
@@ -668,41 +716,55 @@ export default {
     .community-con{
         align-items: center;
         justify-content: center;
+        .community-logo{
+            width: 750px;
+        }
         .community-download{
-            width: 552px;
-            justify-content: space-between;
+    width: 425px;
+    justify-content: space-around;
+            .community-download-app,.community-download-google{
+                    width: 200px;
+    height: 65px;
+            }
         }
         .community-item-con{
-            width: 552px;
+            width: 500px;
             justify-content: space-between;
             margin-top: 67px;
             .community-icon{
                 display: flex;
+                margin-left: 10px;
+    margin-right: 10px;
             }
         }
         .community-copyright{
             margin-top: 95px;
             p{
                 text-align: center;
-                font-size: 24px;
-                font-family: BlenderPro-Heavy, BlenderPro;
+                font-size: 18px;
+                // font-family: BlenderPro-Heavy, BlenderPro;
+                font-family: NovaBattle;
                 font-weight: 800;
                 color: #FFFFFF;
                 line-height: 29px;
             }
         }
         .community-bottom-menus{
-            margin-top: 42px;
+            margin-top: 18px;
             width: 683px;
             justify-content: space-between;
             .menus-nav{
                 display: flex;
+                    align-items: center;
                 .menus-nav-icon{
                     margin-right: 13px;
+                        width: 10px;
+    height: 15px;
                 }
                 .menus-nav-txt{
                     font-size: 18px;
-                    font-family: BlenderPro-Heavy, BlenderPro;
+                    // font-family: BlenderPro-Heavy, BlenderPro;
+                    font-family: NovaBattle;
                     font-weight: 800;
                     color: #6D9BBF;
                 }

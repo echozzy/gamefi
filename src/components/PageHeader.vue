@@ -62,21 +62,26 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@font-face{
+    font-family: NovaBattle;
+    src: url('../assets/font/novabattlePro.ttf');
+}
 .header-con{
     width: 100%;
     display: flex;
     justify-content: center;
     font-size: 24px;
     z-index: 99;
-    font-family: BlenderPro-Heavy, BlenderPro;
+    font-family: NovaBattle;
     .navigation-bar{
         background: url(../assets/header/header-bg.png) no-repeat;
         background-size:100% 100%;
         width: 1335px;
         height: 73px;
         position: relative;
+            margin-top: 15px;
         .nav-con{
-            height: 62px;
+            height: 50px;
             display: flex;
             align-items: center;
             .nav-item{
@@ -90,8 +95,10 @@ export default {
                 position: relative;
                 font-size: 18px;
                 font-weight: 800;
+                font-family: NovaBattle;
                 span{
                     color: #6C9EC5;
+                    font-size: 22px;
                 }
                 &.active{
                     border-bottom: 2px solid #0661dc;
