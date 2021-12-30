@@ -26,7 +26,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section">
+      <section class="section">
         <div class="section-item video-con flex-fc flex-ac">
           <div class="title">
             <img
@@ -34,6 +34,7 @@
               src="../assets/home/video-toptext.png"
               alt=""
             />
+            <!-- <p>READY TO FIGHT</p> -->
           </div>
           <div class="item-video" @click="play_video">
             <div class="video-bg">
@@ -53,7 +54,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="section">
         <div class="section-item play-con flex-fc flex-ac">
           <div class="title">
@@ -63,7 +64,6 @@
           <div class="item-play">
             <swiper
               :modules="modules"
-              :autoplay="true"
               :navigation="swiper_options.navigation"
               :pagination="swiper_options.pagination"
             >
@@ -284,39 +284,25 @@
           </div>
           <div class="community-item-con flex">
             <div class="community-icon">
-                <a href="https://twitter.com/NoVaBattles" target="_blank">
-                    <img src="../assets/home/community-icon1.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon1.png" alt="" />
             </div>
             <div class="community-icon">
-                <a href="https://discord.io/NoVaBattles" target="_blank">
-                    <img src="../assets/home/community-icon2.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon2.png" alt="" />
             </div>
             <div class="community-icon">
-                <a href="https://www.instagram.com/nova.battles/" target="_blank">
-                    <img src="../assets/home/community-icon3.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon3.png" alt="" />
             </div>
             <div class="community-icon">
-                <a href="https://www.facebook.com/NoVaBattles" target="_blank">
-                    <img src="../assets/home/community-icon4.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon4.png" alt="" />
             </div>
             <div class="community-icon">
-                <a href="https://www.reddit.com/r/NoVaBattles" target="_blank">
-                    <img src="../assets/home/community-icon5.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon5.png" alt="" />
             </div>
             <div class="community-icon">
-                <a href="https://t.me/NoVaBattles" target="_blank">
-                    <img src="../assets/home/community-icon6.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon6.png" alt="" />
             </div>
             <div class="community-icon">
-                <a href="https://novabattles.medium.com" target="_blank">
-                    <img src="../assets/home/community-icon7.png" alt="" />
-                </a>
+              <img src="../assets/home/community-icon7.png" alt="" />
             </div>
           </div>
           <div class="community-copyright">
@@ -514,7 +500,6 @@ export default {
     position: relative;
     top: -15px;
     margin-left: 60px;
-    z-index: 2;
     .pagination {
       display: flex;
       margin: 0 20px;
@@ -701,72 +686,15 @@ export default {
     .left-icon2 {
       left: 0;
       bottom: 210px;
-      -webkit-animation: left-icon2 5s ease-in-out alternate infinite;
-      animation: left-icon2 5s ease-in-out alternate infinite;
-      animation-delay:3s;
-    }
-    @-webkit-keyframes left-icon2 {
-      0%,100% {
-        bottom: 220px
-      }
-      50%{
-        bottom: 180px
-      }
-    }
-    @keyframes left-icon2 {
-      0%,100% {
-        bottom: 220px
-      }
-      50%{
-        bottom: 180px
-      }
     }
     .right-icon1 {
       right: 0;
       top: 140px;
-      -webkit-animation: right-icon1 5s ease-in-out alternate infinite;
-      animation: right-icon1 5s ease-in-out alternate infinite;
-      animation-delay:1s;
-    }
-    @-webkit-keyframes right-icon1 {
-      0%,100% {
-        top: 160px
-      }
-      50%{
-        top: 100px
-      }
-    }
-    @keyframes right-icon1 {
-      0%,100% {
-        top: 160px
-      }
-      50%{
-        top: 100px
-      }
     }
     .right-icon2 {
       right: 0;
       bottom: 110px;
       transform: translateX(50%);
-      -webkit-animation: right-icon2 4s ease-in-out alternate infinite;
-      animation: right-icon2 4s ease-in-out alternate infinite;
-      animation-delay:4s;
-    }
-    @-webkit-keyframes right-icon2 {
-      0%,100% {
-        bottom: 120px
-      }
-      50%{
-        bottom: 90px
-      }
-    }
-    @keyframes right-icon2 {
-      0%,100% {
-        bottom: 120px
-      }
-      50%{
-        bottom: 90px
-      }
     }
   }
   .links-con {
