@@ -2,13 +2,13 @@
     <div class="header-con fixed">
         <div class="navigation-bar">
             <div class="nav-con">
-                <div class="nav-item nav-item-left"><span>Home</span></div>
+                <!-- <div class="nav-item nav-item-left"><span>Home</span></div> -->
                 <div class="nav-item"><span>Staking</span></div>
                 <div class="nav-item"></div>
                 <div class="nav-item"><span>MarketPlace</span></div>
-                <div class="nav-item nav-item-right" @click="toggleMenus('community')">
+                <!-- <div class="nav-item nav-item-right" @click="toggleMenus('community')">
                     <span>Community</span>
-                    <!-- <div class="toggle-icon-con">
+                     <div class="toggle-icon-con">
                         <img v-if="nav_active=='community'" src="../assets/header/pc-up.png" alt="">
                         <img v-else src="../assets/header/pc-down.png" alt="">
                     </div>
@@ -20,8 +20,8 @@
                         <li class="child-nav">Reddit</li>
                         <li class="child-nav">Telegram</li>
                         <li class="child-nav">Blog</li>
-                    </ul> -->
-                </div>
+                    </ul> 
+                </div> -->
             </div>
             <div class="logo">
                 <img src="../assets/header/header-logo.png" alt="">

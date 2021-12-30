@@ -743,7 +743,7 @@ export default {
         height: 200px;
         margin-top: 150px;
         .inp-title {
-          font-size: 28px;
+          font-size: 24px;
           // font-family: BlenderPro-Heavy, BlenderPro;
           font-family: NovaBattle;
           font-weight: 800;

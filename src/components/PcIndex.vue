@@ -97,9 +97,9 @@
                 </div>
               </div>
             </swiper>
-            <div class="game-play-btn">
+            <!-- <div class="game-play-btn">
               <img src="../assets/home/game-play-btn.png" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -320,7 +320,7 @@
             </div>
           </div>
           <div class="community-copyright">
-            <p>Nova battle © 2021, All rights reserved</p>
+            <p>ESLA TECHNOLOGY PTE.LTD. © 2021, All rights reserved</p>
           </div>
           <div class="community-bottom-menus flex">
             <div class="menus-nav">
@@ -564,7 +564,7 @@ export default {
       }
     }
     .item-play {
-      width: 1029px;
+      width: 1000px;
       position: relative;
       .game-play-btn {
         position: absolute;
@@ -605,7 +605,7 @@ export default {
       }
     }
     .item-role-con {
-      width: 1179px;
+      width: 1000px;
       .swiper-item {
         width: 100%;
         display: flex;
@@ -656,7 +656,7 @@ export default {
       }
       .txt-content {
         .content-top {
-          font-size: 18px;
+          font-size: 16px;
           // font-family: BlenderPro-Heavy, BlenderPro;
           font-family: NovaBattle;
           font-weight: 800;
@@ -666,12 +666,12 @@ export default {
         }
         .content-mid {
           width: 167px;
-          height: 8px;
+          height: 2px;
           background: #ffa409;
           margin-bottom: 42px;
         }
         .content-bottom {
-          font-size: 18px;
+          font-size: 16px;
           // font-family: BlenderPro-Heavy, BlenderPro;
           font-family: NovaBattle;
           opacity: 0.5;
@@ -682,6 +682,7 @@ export default {
       }
     }
     .shiba-txt-right {
+      width: 300px;
       display: flex;
       align-items: center;
     }
@@ -693,10 +694,10 @@ export default {
       display: flex;
     }
     .left-icon1 {
-      top: 260px;
-      left: 70px;
-      box-sizing: border-box;
-      padding-top: 20px;
+    top: 275px;
+    left: 150px;
+    box-sizing: border-box;
+    padding-top: 20px;
     }
     .left-icon2 {
       left: 0;
@@ -811,11 +812,11 @@ export default {
       .links-inp-con {
         background: url(../assets/home/links-inp-con-bg.png) no-repeat;
         background-size: 100% 100%;
-        width: 1173px;
-        height: 200px;
+        width: 1000px;
+height: 165px;
         margin-top: 150px;
         .inp-title {
-          font-size: 28px;
+          font-size: 24px;
           // font-family: BlenderPro-Heavy, BlenderPro;
           font-family: NovaBattle;
           font-weight: 800;
@@ -823,18 +824,18 @@ export default {
           line-height: 34px;
           display: flex;
           justify-content: center;
-          margin-top: 35px;
+          margin-top: 25px;
         }
         .inp-con {
-          margin-top: 30px;
+          margin-top: 25px;
           width: 100%;
           display: flex;
           justify-content: center;
           .inp {
-            width: 564px;
-            height: 57px;
+    width: 564px;
+    height: 45px;
             font-family: NovaBattle;
-            font-size: 24px;
+            font-size: 18px;
           }
           input {
             width: 100%;
@@ -858,13 +859,12 @@ export default {
           }
           .inp-btn {
             width: 164px;
-            height: 57px;
+    height: 45px;
             margin-left: -2px;
             background: #6f99be;
-            font-size: 28px;
+            font-size: 18px;
             // font-family: BlenderPro-Heavy, BlenderPro;
             font-family: NovaBattle;
-            font-size: 24px;
             letter-spacing: 2px;
             font-weight: 800;
             color: #ffffff;
@@ -872,6 +872,9 @@ export default {
             justify-content: center;
             align-items: center;
             border-radius: 0 4px 4px 0;
+            &:hover{
+              background:#8ac0ef
+            }
           }
         }
       }
