@@ -579,7 +579,7 @@ export default {
   }
   .role-con {
     .title {
-      margin-top: 62px;
+      // margin-top: 62px;
       position: relative;
       display: flex;
       justify-content: center;
@@ -606,13 +606,14 @@ export default {
     }
     .item-role-con {
       width: 1000px;
+      margin-top: 100px;
       .swiper-item {
         width: 100%;
         display: flex;
         justify-content: space-between;
         .role-item {
-          width: 284px;
-          height: 466px;
+          width: 200px;
+          height: 365px;
           img {
             height: 100%;
           }
