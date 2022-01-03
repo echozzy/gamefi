@@ -24,7 +24,7 @@
                 </div> -->
             </div>
             <div class="logo">
-                <img src="../assets/header/header-logo.png" alt="">
+                <img src="../assets/header/header-logo2.png" alt="">
             </div>
         </div>
     </div>
@@ -75,13 +75,13 @@ export default {
     font-family: NovaBattle;
     .navigation-bar{
         background: url(../assets/header/header-bg.png) no-repeat;
-        background-size:100% 100%;
-        width: 1335px;
-        height: 73px;
-        position: relative;
+background-size: 100% 100%;
+    width: 1335px;
+    height: 75px;
+    position: relative;
             // margin-top: 15px;
         .nav-con{
-            height: 50px;
+            height: 60px;
             display: flex;
             align-items: center;
             .nav-item{
@@ -99,6 +99,11 @@ export default {
                 span{
                     color: #6C9EC5;
                     font-size: 22px;
+                    &:hover{
+padding: 5px 30px;
+    background: #6c9ec542;
+    border-radius: 5px;
+                    }
                 }
                 &.active{
                     border-bottom: 2px solid #0661dc;
@@ -141,16 +146,16 @@ export default {
             }
         }
         .logo{
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 11px;
-            transform: translateX(-50%);
-            height: 62px;
-            display: flex;
-            align-items: flex-end;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    bottom: 11px;
+    transform: translateX(-50%);
+    height: 62px;
+    display: flex;
+    align-items: flex-end;
             img{
-                width: 171px;
+    width: 210px;
             }
         }
     }

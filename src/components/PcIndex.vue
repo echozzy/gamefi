@@ -9,16 +9,16 @@
           <div class="banner-mask">
             <div class="download-con flex-fc">
               <div class="download-top">
-                <img src="../assets/home/banner-logo.png" alt="" />
+                <img src="../assets/home/banner-logo2.png" alt="" />
               </div>
-              <div class="download-bottom flex">
+              <!-- <div class="download-bottom flex">
                 <div class="app-store">
                   <img src="../assets/home/app-store.png" alt="" />
                 </div>
                 <div class="google-play">
                   <img src="../assets/home/google-play.png" alt="" />
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="banner-down">
               <img src="../assets/home/banner-down.png" alt="" />
@@ -435,7 +435,10 @@ export default {
       display: flex;
       justify-content: center;
       .download-con {
-        margin-top: 192px;
+    margin-top: 320px;
+        .download-top{
+              width: 650px;
+        }
         .download-bottom {
           margin-top: 91px;
           display: flex;
@@ -925,6 +928,12 @@ height: 165px;
       .menus-nav {
         display: flex;
         align-items: center;
+        padding: 5px;
+            border-radius: 5px;
+        &:hover{
+          background:#6d9bbf;
+          color: white;
+        }
         .menus-nav-icon {
           margin-right: 13px;
           width: 10px;
@@ -936,6 +945,9 @@ height: 165px;
           font-family: NovaBattle;
           font-weight: 800;
           color: #6d9bbf;
+          &:hover{
+            color:white;
+          }
         }
       }
     }
