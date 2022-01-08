@@ -73,12 +73,14 @@ export default {
     font-size: 24px;
     z-index: 99;
     font-family: NovaBattle;
+
     .navigation-bar{
         background: url(../assets/header/header-bg.png) no-repeat;
 background-size: 100% 100%;
-    width: 1335px;
+    width: 800px;
     height: 75px;
     position: relative;
+        padding: 0 30px;
             // margin-top: 15px;
         .nav-con{
             height: 60px;
